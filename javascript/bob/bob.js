@@ -11,25 +11,14 @@ input = input.replace(/, /g,'');
   if(input.trim() === ""){
     return 'Fine. Be that way!'
   }
-  else if(input === input.toUpperCase() && isNaN(input)){
-    if((input.slice(-1) === "?")){
-      input = input.replace("?","");
-      if(!isNaN(input)){
-        return 'Sure.'
-      }
-    }
+  else if(input === input.toUpperCase() && input.toUpperCase() != input.toLowerCase()){
     return "Whoa, chill out!"
   }
   else if (input.slice(-1) === "?"){
-    if (input === input.toUpperCase()){
-      return "Whoa, chill out!"
-    }
-    return "Sure."
-  }
-
-  else {
+    return "Sure.";
+  }  else {
     return "Whatever."
   }
-  };
+};
 
 module.exports = Bob;
