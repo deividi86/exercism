@@ -1,0 +1,4 @@
+{
+  "leap/leap_test.py::YearTest::test_year_divisible_by_100_not_divisible_by_400": true, 
+  "leap/leap_test.py::YearTest::test_year_not_divisible_by_4": true
+}
